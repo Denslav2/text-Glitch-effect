@@ -1,0 +1,31 @@
+body{
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: cornflowerblue;
+    color: cyan;
+}
+h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    animation: animate .7s infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes animate{
+    0%{
+        text-shadow: 5px 5px 0 rgb(0, 68, 255);
+    }
+    25%{
+        text-shadow: -5px -5px 0 rgb(234, 0, 255);
+    }
+    75%{
+        text-shadow: 5px 5px 0 rgb(0, 68, 255);
+    }
+    100%{
+        text-shadow: -5px -5px 0 rgb(234, 0, 255);
+    }
+
+}
